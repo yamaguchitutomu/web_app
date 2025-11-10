@@ -1,5 +1,5 @@
 <!-- ベーステンプレートを適用する-->
-{% extends 'base.html' %}
+{% extends 'blogapp/base.html' %}
 <!-- 静的ファイルのURLを生成するstaticタグをロードする-->
 {% load static %}
 
@@ -81,7 +81,7 @@
                       
                     <!-- Pager-->
                     <!-- ページネーションが組み込まれたテンプレートの読み込み-->
-                    {% include "pagination.html" %}
+                    {% include "blogapp/pagination.html" %}
                 </div>
             </div>
         </div>
