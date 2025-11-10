@@ -59,7 +59,7 @@ class DailylifeView(ListView):
     
     '''
     # dailylife_list.htmlをレンダリングする
-    template_name ='bloogapp/dailylife_list.html'
+    template_name ='blogapp/dailylife_list.html'
     # クラス変数modelにモデルBlogPostを設定
     model = BlogPost
     # object_listキーの別名を設定
