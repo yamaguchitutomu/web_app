@@ -15,7 +15,7 @@ class IndexView(ListView):
       queryset: データベースのクエリ
     '''
     # index.htmlをレンダリングする
-    template_name ='index.html'
+    template_name ='blogapp/index.html'
     # object_listキーの別名を設定
     context_object_name = 'orderby_records'
     # モデルBlogPostのオブジェクトにorder_by()を適用して
@@ -33,7 +33,7 @@ class BlogDetail(DetailView):
       Model: モデルのクラス
     '''
     # post.htmlをレンダリングする
-    template_name ='post.html'
+    template_name ='blogapp/post.html'
     # クラス変数modelにモデルBlogPostを設定
     model = BlogPost
 
@@ -42,7 +42,7 @@ class ScienceView(ListView):
     
     '''
     # science_list.htmlをレンダリングする
-    template_name ='science_list.html'
+    template_name ='blogapp/science_list.html'
     # クラス変数modelにモデルBlogPostを設定
     model = BlogPost
     # object_listキーの別名を設定
@@ -59,7 +59,7 @@ class DailylifeView(ListView):
     
     '''
     # dailylife_list.htmlをレンダリングする
-    template_name ='dailylife_list.html'
+    template_name ='bloogapp/dailylife_list.html'
     # クラス変数modelにモデルBlogPostを設定
     model = BlogPost
     # object_listキーの別名を設定
@@ -76,7 +76,7 @@ class MusicView(ListView):
     
     '''
     # music_list.htmlをレンダリングする
-    template_name ='music_list.html'
+    template_name ='blogapp/music_list.html'
     # クラス変数modelにモデルBlogPostを設定
     model = BlogPost
     # object_listキーの別名を設定
