@@ -1,0 +1,37 @@
+{% extends "seisaku/base.html" %} {# ベーステンプレートを継承 #}
+{% load static %}
+
+{# ページタイトルの設定 #}
+{% block title %}Contact{% endblock %}
+
+{# <!DOCTYPE html> や <html> <head> <body> は base.html に移動したため削除 #}
+
+    {# Page Header 部分を block header で囲む #}
+    {% block header %}
+    <header class="masthead" style="background-image: url('{% static "assets/img/contact-bg.jpg" %}')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="page-heading">
+                        <h1>Contact</h1>
+                        <span class="subheading">お問い合わせはこちらから</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    {% endblock %}
+
+    {# Main Content 部分を block contents で囲む #}
+    {% block contents %}
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <p>このページはサンプルのため、送信機能は実装されていません。</p>
+                <p>ご連絡はサンプルメールアドレス（example@example.com）までお願いします。</p>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+
+{# フッター部分および JS 読み込みは base.html に移動済み #}
